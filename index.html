@@ -20,7 +20,6 @@
 				margin-bottom: 0.3em;
 				text-decoration: none;
 				color: black;
-				font-size: 2em;
 			}
 
 			#counter{
@@ -47,7 +46,7 @@
 
 			function kindDirect(x){
 				if (x == 0){
-					window.location = "https://kindstudios.gr";
+					window.location = "http://kiriakos.github.io/API-Blueprint-What-Matters-Most/html-presentation/API-Blueprint.html";
 				}else{
 					x-=1;
 					window.redirectTimeout =
@@ -66,23 +65,24 @@
 
 	</head>
 	<body onLoad="setKindRedirect(2)">
-            <img alt="KIND Studios Logo"
-                 src="https://kindstudios.gr/images/originals/4a25fc8d248d2838720594999f2f7cbe.png" />
+
 			<div class="content">
+                <img alt="KIND Studios Logo"
+                    src="https://kindstudios.gr/images/originals/4a25fc8d248d2838720594999f2f7cbe.png" />
 				<span id="counter"></span>
 				<p>
 					<h1>Oh no, it's the dreaded Redirect</h1>
-					<a class="link" target="_blank"
-                       href="http://kiriakos.github.io/API-Blueprint-What-Matters-Most/html-presentation/API-Blueprint.html">
-						<span class="kindBlack">kind</span>
-                        <span class="kindGreen">Studios</span>
-                        <span class="kindBlack">.gr</span>
-					</a>
 					<br />
 					<span>
                         Hang on, we'll redirect You somewhere relevant now.
                     </span>
 				</p>
+                <a class="link" target="_blank"
+                href="http://kiriakos.github.io/API-Blueprint-What-Matters-Most/html-presentation/API-Blueprint.html">
+                    <span class="kindBlack">kind</span>
+                    <span class="kindGreen">Studios</span>
+                    <span class="kindBlack">.gr</span>
+                </a>
 			</div>
 	</body>
 </html>
