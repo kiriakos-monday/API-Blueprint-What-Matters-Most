@@ -1,0 +1,88 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+
+
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<style type="text/css">
+			html{
+				font-family: arial, sans;
+			}
+			span{
+				margin: 0px;
+				}
+			a{
+				display: block;
+				margin-top: 0.3em;
+				margin-bottom: 0.3em;
+				text-decoration: none;
+				color: black;
+				font-size: 2em;
+			}
+
+			#counter{
+				font-size: 4em;
+			}
+			.content{
+				margin: 10% 35% 10% 35%;
+				text-align: center;
+			}
+			.link{
+			}
+			.link:hover{
+				text-decoration: underline;
+			}
+			.kindGreen{
+				color: #33bb33;
+			}
+			.kindBlack{
+				color: black;
+			}
+		</style>
+		<script type="text/javascript">
+			var timeout;
+
+			function kindDirect(x){
+				if (x == 0){
+					window.location = "https://kindstudios.gr";
+				}else{
+					x-=1;
+					window.redirectTimeout =
+                            setTimeout("kindDirect("+x+")" ,1000);
+					document.getElementById("counter").innerHTML = x;
+				}
+            }
+
+			function setKindRedirect(x){
+				document.getElementById("counter").innerHTML = x;
+				window.redirectTimeout = setTimeout("kindDirect("+x+")" ,1000);
+			}
+
+		</script>
+        <title>Oh no, it's the dreaded Redirect</title>
+
+	</head>
+	<body onLoad="setKindRedirect(2)">
+            <img alt="KIND Studios Logo"
+                 src="https://kindstudios.gr/images/originals/4a25fc8d248d2838720594999f2f7cbe.png" />
+			<div class="content">
+				<span id="counter"></span>
+				<p>
+					<h1>Oh no, it's the dreaded Redirect</h1>
+					<a class="link" target="_blank"
+                       href="http://kiriakos.github.io/API-Blueprint-What-Matters-Most/html-presentation/API-Blueprint.html">
+						<span class="kindBlack">kind</span>
+                        <span class="kindGreen">Studios</span>
+                        <span class="kindBlack">.gr</span>
+					</a>
+					<br />
+					<span>
+                        Hang on, we'll redirect You somewhere relevant now.
+                    </span>
+				</p>
+			</div>
+	</body>
+</html>
