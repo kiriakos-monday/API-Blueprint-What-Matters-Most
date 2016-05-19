@@ -1,4 +1,4 @@
-# API-Blueprint-What-Matters-Most
+# API Blueprint: What matters most
 Presentation of API Blueprint and Why I think it is a great tool for corporate IT projects
 
 ## Licence
